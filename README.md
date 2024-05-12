@@ -10,7 +10,7 @@ This application is primarily designed to be ran via a docker container, here is
 ---
 services:
   bsmm:
-    image: barotrauma-server-mod-manager
+    image: ghcr.io/podshot/barotrauma-server-mod-manager:latest
     restart: unless-stopped
     ports:
       - "3000:3000"
@@ -20,6 +20,6 @@ services:
 
 This will set up the mod manager to be accessible at `http://<your-ip>:3000` and load the Barotrauma files from `/path/to/barotrauma-server`
 
-
 ## Notes
+
 The name Barotrauma and all related names and assets are property of the respective rights holders
