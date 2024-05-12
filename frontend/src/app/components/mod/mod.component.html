@@ -1,0 +1,22 @@
+<div class="mod">
+  <div class="mod-details">
+    {{ modData?.name }}
+    <div class="mod-path">
+      {{ modData?.path }}
+    </div>
+  </div>
+
+  <div class="form-check form-switch">
+    <input
+      type="checkbox"
+      class="form-check-input"
+      role="switch"
+      id="mod-{{ modData?.id }}"
+      [checked]="modData?.status === 'enabled'"
+      (click)="toggleStatus()"
+    />
+    <label for="mod-{{ modData?.id }}" class="form-check-label">{{
+      modData?.status === "enabled" ? "Enabled" : "Disabled"
+    }}</label>
+  </div>
+</div>

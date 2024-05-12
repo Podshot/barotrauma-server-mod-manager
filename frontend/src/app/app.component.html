@@ -1,0 +1,19 @@
+<div class="app">
+  <div class="mod-app" style="grid-column: 2">
+    <div class="mod-header">
+      <span>Mods:</span>
+      <button type="button" class="btn btn-primary" (click)="reloadMods()">
+        Reload
+      </button>
+      <button type="button" class="btn btn-success" (click)="saveMods()">
+        Save
+      </button>
+    </div>
+
+    <div class="mod-list">
+      @for (mod of mods; track $index) {
+      <mod [modData]="mod"></mod>
+      }
+    </div>
+  </div>
+</div>
