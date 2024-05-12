@@ -27,7 +27,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: Podshot/barotrauma-server-mod-manager
+          images: ghcr.io/Podshot/barotrauma-server-mod-manager
 
       - name: Build and push Docker image
         id: push
